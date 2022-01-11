@@ -19,3 +19,61 @@ body {
     align-items: center;
     background-color: hsl(var(--hue), 80%, 60%);
   }
+
+
+  .container {
+      width:1000px;
+      max-width: 10%;
+      background-color: lavender;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px 5px;
+  }
+
+
+  .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+      margin: 20px 5;
+
+  }
+
+  .btn {
+      --hue: var(--hue-neutral);
+      border: 2px solid hsl(var(--hue), 80%, 30%);
+      background-color: hsl(var(--hue), 80%, 60%);
+      border-radius: Spx;
+      padding: Spx 10px;
+      color: white;
+      outline: none;
+  }
+
+  .btn-hover {
+      border-color: black;
+  }
+
+  .btn.correct {
+      --hue: var(--hue-correct);
+      color: black;
+  }
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+
+  .start-btn, next-btn {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 20px 30px;
+
+  }
+  .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .hide {
+      display:none;
+  }
